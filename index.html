@@ -1,1 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feed | LinkedIn </title>
+<link rel="icon" type="image/svg+xml" href="https://static.licdn.com/sc/h/akt4ae504epesldzj74dzred8" id="favicon-svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- -------------- Navbar ------------ -->
+<nav>
+<div class="navbar">
+<div class="navbar-left">
+    <a href="index.html" class="logo"><img src="/images/logo.png" alt="logo"></a>
+
+    <div class="search-box">
+        <img src="/images/search.png" alt="img">
+        <input type="text" placeholder="Search">
+    </div>
+</div>
+<div class="navbar-center">
+    <ul>
+        <li><a class="active-link" href="index.html"><img src="/images/home.png" alt="image"><span>Home</span></a></li>
+        <li><a href="#"><img src="/images/network.png" alt="image"><span>My Network</span></a></li>
+        <li><a href="#"><img src="/images/jobs.png" alt="image"><span>Jobs</span></a></li>
+        <li><a href="#"><img src="/images/message.png" alt="image"><span>Messaging</span></a></li>
+        <li><a href="#"><img src="/images/notification.png" alt="image"><span>Notifications</span></a></li>
+    </ul>
+</div>
+
+<div class="navbar-right" onclick="dropdownToggle()">
+    <img src="/images/user-1.jpeg" alt="image" class="nav-profile-img">
+        <div class="drop-down-icon">
+            <p>Me</p><img src="/images/down-arrow.png" alt="img" class="nav-drop-down">
+        </div>
+</div>
+
+<!-- -------------- Profile drop down menu -------------- -->
+
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="/images/user-1.jpeg" alt="img">
+            <div>
+                <h3>Asif Zulfiqar</h3>
+                <p>Frontend Web Developer | HTML/CSS | Bootstrap | JS | React | Wordpress</p>
+            </div>
+        </div>
+        <div class="view-profile"><a href="/profile.html">View Profile</a></div>
+
+        <div class="profile-sidebar">
+            <h5>Account</h5>
+            <div class="premium-flex">
+                <img src="/images/premium.png" alt="img">
+                <a href="#">Try Premium for free</a>
+            </div>
+            <a href="#"><span>Settings and Privacy</span></a>
+            <a href="#"><span>Help</span></a>
+            <a href="#"><span>Language</span></a>
+        </div>
+
+        <div class="profile-sidebar">
+            <h5>Manage</h5>
+            <a href="#"><span>Posts and Activity</span></a>
+            <a href="#"><span>Job Posting Account</span></a>
+        </div>
+
+        <div class="profile-sidebar">
+            <a class="sign-out" href="#"><span>Sign Out</span></a>
+        </div>
+    </div>
+    
+</div>
+</div>
+</nav>
+
+<!-- -------------- Newsfeed Container ---------- -->
+
+<div class="container">
+<!-- -------------- Left Side Bar -------------- -->
+<div class="left-sidebar">
+    <div class="sidebar-profile-box">
+        <img src="/images/cover.jpeg" alt="img" width="100%">
+        <div class="sidebar-profile-info">
+            <img src="/images/user-1.jpeg" alt="img">
+            <h1>Asif Zulfiqar</h1>
+            <h3>Web Developer at LinkedIn</h3>
+            <p>HTML | CSS | Bootstrap | JavaScript | React JS | Wordpress | PHP | Node JS | Git
+            </p>
+            <ul>
+                <li>Your profile views<span>13</span></li>
+                <li>Your post views<span>20</span></li>
+                <li>Your connections<span>205</span></li>
+            </ul>
+        </div> 
+        <div class="sidebar-profile-link">
+            <a href="#"><img src="/images/items.png" alt="img"><span>My items</span></a>
+            <a href="#"><img src="/images/premium.png" alt="img"><span>Try premium</span></a>
+        </div> 
+    </div>
+
+    <div class="sidebar-activity" id="sidebarActivity">
+        <h5>Recent</h5>
+        <a href="#"><img src="/images/recent.png" alt="img"><span>Web Development</span></a>
+        <a href="#"><img src="/images/recent.png" alt="img"><span>JavaScipt Course</span></a>
+        <a href="#"><img src="/images/recent.png" alt="img"><span>React JS</span></a>
+        <a href="#"><img src="/images/recent.png" alt="img"><span>Frontend Coding</span></a>
+        <a href="#"><img src="/images/recent.png" alt="img"><span>Jobs in Lahore</span></a>
+
+        <h5 style="padding-top: 20px;">Groups</h5>
+        <a href="#"><img src="/images/group.png" alt="img"><span>Group Learning</span></a>
+        <a href="#"><img src="/images/group.png" alt="img"><span>Online Learning</span></a>
+        <a href="#"><img src="/images/group.png" alt="img"><span>Remote Jobs</span></a>
+
+        <h5 style="padding-top: 20px;">Hashtag</h5>
+        <a href="#"><img src="/images/hashtag.png" alt="img"><span>Web Development Jobs</span></a>
+        <a href="#"><img src="/images/hashtag.png" alt="img"><span>React</span></a>
+        <a href="#"><img src="/images/hashtag.png" alt="img"><span>JavaScipt</span></a>
+    
+
+    <div class="discover">
+        <a href="#">Discover more</a>
+    </div>
+    </div>
+    <p onclick="toggleLink()" id="showMoreLink">Show more <b>+</b></p>
+
+</div>
+<!-- -------------- Main Content -------------- -->
+
+<div class="main-content">
+    <div class="create-post">
+        <div class="create-post-input">
+            <img src="/images/user-1.jpeg" alt="img">
+            <textarea name="" id="" cols="" rows="2" placeholder="Start a post"></textarea>
+        </div>
+        <div class="create-post-link">
+            
+                <li><img src="/images/photo.png" alt="img"><span>Photo</span></li>
+                <li><img src="/images/video.png" alt="img"><span>Video</span></li>
+                <li><img src="/images/event.png" alt="img"><span>Event</span></li>
+                <li><span>Post</span></li>
+            
+        </div>
+    </div>
+
+    <div class="sort-by">
+        <hr>
+        <p>Sort by: <span>Top<img src="/images/down-arrow.png" alt=""></span></p>
+    </div>
+
+    <div class="post">
+        <div class="post-author">
+            <img src="/images/jaffer.jpeg" alt="img">
+            <div>
+                <h3>Jaffer Arshad</h3>
+                <small>Unity 3D Game Developer | C# | .Net</small>
+                <div class="earth-flex">
+                <span>2 hours ago <strong>&middot;</strong></span>
+                <img class="earth" src="/images/earth.png" alt="img">
+            </div>
+            </div>
+        </div>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        <img src="/images/post-image-1.png" alt="img" width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="/images/like.png" alt="img">
+                <img src="/images/clap.png" alt="img">
+                <img src="/images/love.png" alt="img">
+                <span class="like-users">750</span>
+            </div>
+            <div>
+                <span>22 comments &middot; 12 reposts</span>
+            </div>
+        </div>
+
+        <div class="post-activity">
+            <div><img src="/images/like.png" alt="img">Like</div>
+            <div><img src="/images/comment.png" alt="img">Comment</div>
+            <div><img src="/images/share.png" alt="img">Share</div>
+            <div><img src="/images/send.png" alt="img">Send</div>
+        </div>
+    </div>
+
+    <!-- ---------- second post -------- -->
+
+    <div class="post">
+        <div class="post-author">
+            <img src="/images/post2.png" alt="img">
+            <div>
+                <h3>Syeda Qurat-ul-ain</h3>
+                <small>HR Professional | HR Executive | Recruiter | Talent Acquisition</small>
+                <div class="earth-flex">
+                <span>5 hours ago <strong>&middot;</strong></span>
+                <img class="earth" src="/images/earth.png" alt="img">
+            </div>
+            </div>
+        </div>
+        <p>Dear Connections,
+
+            I am reaching out to connect with talented individuals who have experience in the following areas: <br><br>
+            
+            1- Accounts & Finance <br>
+            2- Sales and Marketing <br>
+            3- Admin & HR <br>
+            4- Supply Chain <br>
+            5- IT <br>
+            6- Ecommerce.</p>
+        <img src="/images/post2-img.png" alt="img" width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="/images/like.png" alt="img">
+                <img src="/images/clap.png" alt="img">
+                <img src="/images/love.png" alt="img">
+                <span class="like-users">182</span>
+            </div>
+            <div>
+                <span>110 comments &middot; 10 reposts</span>
+            </div>
+        </div>
+
+        <div class="post-activity">
+            <div><img src="/images/like.png" alt="img">Like</div>
+            <div><img src="/images/comment.png" alt="img">Comment</div>
+            <div><img src="/images/share.png" alt="img">Share</div>
+            <div><img src="/images/send.png" alt="img">Send</div>
+        </div>
+    </div>
+
+    <!-- ---------- Third post -------- -->
+
+    <div class="post">
+        <div class="post-author">
+            <img src="/images/post3.png" alt="img">
+            <div>
+                <h3>Alexandra BUSTOS ILIESCU</h3>
+                <small>Digital Communication Consultant @ITU/UN #AIforGood | MBA | MIM with a specialization in Digital Marketing | WEF Global Shaper 🚀</small>
+                <div class="earth-flex">
+                <span>6 hours ago <strong>&middot;</strong></span>
+                <img class="earth" src="/images/earth.png" alt="img">
+            </div>
+            </div>
+        </div>
+        <p>Announcing the Launch of AI for Good Insider, your go-to source for #AI insights! 📰
+
+            Stay informed with the latest <a style="color:#045be6; font-weight:600" href="#">#AIforGood</a> news, cutting-edge blogs on AI, <a style="color:#045be6; font-weight:600" href="#">#robotics</a>, and beyond - delivered right to your inbox every week!
+            
+            Don't miss out on anything - Subscribe to our LinkedIn <a style="color:#045be6; font-weight:600" href="#">#newsletter</a>today!<br><a style="color:#045be6; font-weight:600" href="#">🌐 https://lnkd.in/eyRSrGiF</a></p>
+        <img src="/images/post3-img.png" alt="img" width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="/images/like.png" alt="img">
+                <img src="/images/clap.png" alt="img">
+                <img src="/images/love.png" alt="img">
+                <span class="like-users">47</span>
+            </div>
+            <div>
+                <span>21 comments &middot; 13 reposts</span>
+            </div>
+        </div>
+
+        <div class="post-activity">
+            <div><img src="/images/like.png" alt="img">Like</div>
+            <div><img src="/images/comment.png" alt="img">Comment</div>
+            <div><img src="/images/share.png" alt="img">Share</div>
+            <div><img src="/images/send.png" alt="img">Send</div>
+        </div>
+    </div>
+
+    <!-- ---------- Fourth post -------- -->
+
+    <div class="post">
+        <div class="post-author">
+            <img src="/images/startup.jpeg" alt="img">
+            <div>
+                <h3>Startup Pakistan</h3>
+                <small>Pakistan's Leading Startups, Tech and General News Platform</small>
+                <div class="earth-flex">
+                <span>7 hours ago <strong>&middot;</strong></span>
+                <img class="earth" src="/images/earth.png" alt="img">
+            </div>
+            </div>
+        </div>
+        <p>Meet the world's first intelligence bionic quadruped robot companion of consumer level. <br><br>
+
+            Robot dogs with jobs are already a thing. As a new detection method for factories, parks, substations, urban underground pipe corridors and other important places, intelligent inspection quadruped robots can obtain environmental information and identification information of sensing equipment, and can complete tasks that cannot be done manually. Also some of them can be equipped with an intelligent fire-fighting system that help protect fire-fighting safety, so that rescuers are no longer in danger! <br><br>
+            
+            But to be your friend? It is the first time. Go1, a robot pet dog designed by China-based Unitree Robotics, now wants you to pet it. It can provide companionship, home assistance and security for elderly people, and even be your jogging partner.<br><br>
+            
+            Will they replace the real thing?</p>
+        <img src="/images/post-4img.png" alt="img" width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="/images/like.png" alt="img">
+                <img src="/images/clap.png" alt="img">
+                <img src="/images/love.png" alt="img">
+                <span class="like-users">340</span>
+            </div>
+            <div>
+                <span>120 comments &middot; 36 reposts</span>
+            </div>
+        </div>
+
+        <div class="post-activity">
+            <div><img src="/images/like.png" alt="img">Like</div>
+            <div><img src="/images/comment.png" alt="img">Comment</div>
+            <div><img src="/images/share.png" alt="img">Share</div>
+            <div><img src="/images/send.png" alt="img">Send</div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- -------------- Right Side Bar -------------- -->
+
+<div class="right-sidebar">
+    <div class="sidebar-news">
+        <img src="/images/more.png" class="info-icon" alt="img">
+        <h3>Trending News</h3>
+        <a href="#">High demand for skilled manpower</a>
+        <span>1d ago &middot; 10,932 readers</span>
+
+        <a href="#">Careers growing horizentally too</a>
+        <span>18h ago &middot; 3,932 readers</span>
+
+        <a href="#">Less work visa for US, more for UK</a>
+        <span>2h ago &middot; 1,932 readers</span>
+
+        <a href="#" class="read-more-link">Read More</a>
+    </div>
+    <div class="sidebar-ad">
+        <small>Ad &middot; &middot; &middot;</small>
+        <p>Master the 5 principles of web design</p>
+        <div>
+            <img src="/images/user-1.jpeg" alt="img">
+            <img src="/images/mi-logo.png" alt="img">
+        </div>
+        <b>Brand and Demand in Xiaomi</b>
+        <a href="#" class="ad-link"><span>Learn More</span></a>
+    </div>
+
+    <div class="hiring-img">
+        <img src="/images/hiring.png" alt="img">
+    </div>
+
+    <div class="sidebar-useful-links">
+        <a href="#">About</a>
+        <a href="#">Accesability</a>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Advertising</a>
+        <a href="#">Get the LinkedIn App</a>
+        <a href="#">More</a>
+
+        <div class="copyright-mesg">
+            <img src="/images/logo.png" alt="img">
+            <p>LinkedIn © 2023 All rights reserved</p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
+
 

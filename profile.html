@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feed | LinkedIn </title>
+<link rel="icon" type="image/svg+xml" href="https://static.licdn.com/sc/h/akt4ae504epesldzj74dzred8" id="favicon-svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- -------------- Navbar ------------ -->
+<nav>
+<div class="navbar">
+    <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="/images/logo.png" alt="logo"></a>
+
+        <div class="search-box">
+            <img src="/images/search.png" alt="img">
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+    <div class="navbar-center">
+        <ul>
+            <li><a href="index.html"><img src="/images/home.png" alt="image"><span>Home</span></a></li>
+            <li><a href="#"><img src="/images/network.png" alt="image"><span>My Network</span></a></li>
+            <li><a href="#"><img src="/images/jobs.png" alt="image"><span>Jobs</span></a></li>
+            <li><a href="#"><img src="/images/message.png" alt="image"><span>Messaging</span></a></li>
+            <li><a href="#"><img src="/images/notification.png" alt="image"><span>Notifications</span></a></li>
+        </ul>
+    </div>
+    
+    <div class="navbar-right" onclick="dropdownToggle()">
+        <img src="/images/user-1.jpeg" alt="image" class="nav-profile-img">
+            <div class="drop-down-icon">
+                <p>Me</p><img src="/images/down-arrow.png" alt="img" class="nav-drop-down">
+            </div>
+    </div>
+
+    <!-- -------------- Profile drop down menu -------------- -->
+
+    <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+            <div class="user-info">
+                <img src="/images/user-1.jpeg" alt="img">
+                <div>
+                    <h3>Asif Zulfiqar</h3>
+                    <p>Frontend Web Developer | HTML/CSS | Bootstrap | JS | React | Wordpress</p>
+                </div>
+            </div>
+            <div class="view-profile"><a href="/profile.html">View Profile</a></div>
+
+            <div class="profile-sidebar">
+                <h5>Account</h5>
+                <div class="premium-flex">
+                    <img src="/images/premium.png" alt="img">
+                    <a href="#">Try Premium for free</a>
+                </div>
+                <a href="#"><span>Settings and Privacy</span></a>
+                <a href="#"><span>Help</span></a>
+                <a href="#"><span>Language</span></a>
+            </div>
+
+            <div class="profile-sidebar">
+                <h5>Manage</h5>
+                <a href="#"><span>Posts and Activity</span></a>
+                <a href="#"><span>Job Posting Account</span></a>
+            </div>
+
+            <div class="profile-sidebar">
+                <a class="sign-out" href="#"><span>Sign Out</span></a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</nav>
+
+<!-- -------------- Profile Container ---------- -->
+
+<div class="container">
+    <div class="profile-main">
+            <div class="profile-container">
+                <img src="/images/cover.jpeg" alt="img" width="100%">
+                <div class="profile-container-inner">
+                    <img src="/images/user-1.jpeg" alt="img" class="profile-pic">
+                    <h3>Asif Zulfiqar</h3>
+                    <b>Frontend Web Developer | HTML/CSS | Bootstrap | JS | React | Wordpress</b>
+                    <p>Lahore, Pakistan &middot; <a href="#" style="color:#045be6; font-weight:600">Contact Info</a></p>
+                    <a href="#" style="color:#045be6; font-weight:600">68 connections</a>
+                </div>
+                <div class="buttons">
+                    <a class="first-btn" href="#">Open to</a>
+                    <a class="second-btn" href="#">Add profile section</a>
+                    <a class="third-btn" href="#">More</a>
+                </div>
+
+                <div class="two-containers">
+                    <div class="first-container">
+                        <h5>Open to work</h5>
+                        <p>Frontend Web Developer and Web Developer rol...</p>
+                        <p><a style="color:#045be6; font-weight:600" href="#">Show details</a></p>
+                    </div>
+                    <div class="second-container">
+                        <h5>Providing services</h5>
+                        <p>Web Development and Web Design</p>
+                        <p><a style="color:#045be6; font-weight:600" href="#">Show details</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-info">
+                <h3>About</h3>
+                <p>Skilled in frontend web development and cloud solutions. An inquisitive learner and believes in constant improvement. Spend free time with family, playing cricket and on some own projects.</p>
+            </div>
+
+            <div class="experience-container">
+                <h4>Experience</h4>
+                <div class="experience-row">
+                    <div><img class="row-img" src="/images/qrg.jpeg" alt="img"></div>
+                    <div class="row-discription">
+                        <h5>Frontend Web Developer</h5>
+                        <p>Quality Resource Pvt Ltd · Full-time</p>
+                        <small>Feb 2023 - Present · 2 mos</small>
+                        <small>Lahore, Punjab, Pakistan · On-site</small>
+                        <p class="last-child"><strong>Skills:</strong> WordPress · PHP · WooCommerce · HTML · JavaScriptSkills</p>
+                    </div>
+                </div>
+
+                <div class="experience-row">
+                    <div><img class="row-img" src="/images/vsh.jpeg" alt="img"></div>
+                    <div class="row-discription">
+                        <h5>Customer Service RepresentativeCustomer</h5>
+                        <p>Virtual Support Heroes · Full-time</p>
+                        <small>Feb 2019 - Jan 2023 · 4 yrs</small>
+                        <small>Lahore, Punjab, Pakistan · On-site</small>
+                        <p class="last-child"><strong>Skills:</strong> Communication · Service · Typing · Troubleshooting · Customer Service</p>
+                    </div>
+                </div>
+
+                <div class="experience-row">
+                    <div><img class="row-img" src="/images/vitsol.jpeg" alt="img"></div>
+                    <div class="row-discription">
+                        <h5>Web Developer</h5>
+                        <p>Vitsol Technologies · Full-time</p>
+                        <small>Aug 2021 - Nov 2021 · 4 mos</small>
+                        <small>Lahore, Punjab, Pakistan · On-site</small>
+                        <p class="last-child"><strong>Skills:</strong> WordPress · Bootstrap · HTML · JavaScript · Cascading Style Sheets (CSS)</p>
+                    </div>
+                </div>
+
+                <div class="experience-row">
+                    <div><img class="row-img" src="/images/macdonald.jpeg" alt="img"></div>
+                    <div class="row-discription">
+                        <h5>Crew Member</h5>
+                        <p>McDonald's Pakistan · Full-time</p>
+                        <small>Oct 2017 - Mar 2018 · 6 mos</small>
+                        <small>Lahore, Punjab, Pakistan · On-site</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------- Education Container -------------- -->
+
+            <div class="experience-container">
+                <h4>Education</h4>
+                <div class="experience-row">
+                    <div><img class="row-img" src="/images/punjab.jpeg" alt="img"></div>
+                    <div class="row-discription">
+                        <h5>University of the Punjab</h5>
+                        <p>Associate Degree, BCS</p>
+                        <small>Mar 2021 - May 2023</small>
+                        <small>Lahore, Punjab, Pakistan</small>
+                    </div>
+                </div>
+
+                <div class="experience-row">
+                    <div><img class="row-img" src="/images/punjab.jpeg" alt="img"></div>
+                    <div class="row-discription">
+                        <h5>Garrison College</h5>
+                        <p>Intermediate, ICS</p>
+                        <small>2014 - 2016</small>
+                        <small>Lahore, Punjab, Pakistan</small>
+                    </div>
+                </div>
+
+                <div class="experience-row">
+                    <div><img class="row-img" src="/images/punjab.jpeg" alt="img"></div>
+                    <div class="row-discription">
+                        <h5>Summaiya Galaxy High School</h5>
+                        <p>Computer Science</p>
+                        <small>2003 - 2011</small>
+                        <small>Shahdadpur, Sindh, Pakistan</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------- Certificate Container -------------- -->
+
+            <div class="experience-container">
+                <h4>Licenses & certifications</h4>
+                <div class="experience-row">
+                    <div><img class="row-img" src="/images/meta.jpeg" alt="img"></div>
+                    <div class="row-discription">
+                        <h5>Frontend Web DevelopmentFrontend</h5>
+                        <p>Meta</p>
+                        <small>Issued Feb 2023</small>
+                        <p class="last-child"><strong>Skills:</strong> Object-Oriented Programming (OOP) · Functional Programming · JavaScriptSkills</p>
+                    </div>
+                </div>
+
+                <div class="experience-row">
+                    <div><img class="row-img" src="/images/lead.jpeg" alt="img"></div>
+                    <div class="row-discription">
+                        <h5>Learn to Code for the Web - University of Leeds</h5>
+                        <p>University of LeedsUniversity</p>
+                        <small>Issued Feb 2021</small>
+                        <p class="last-child"><strong>Skills:</strong> HTML · CSS · Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------- Skills -------------- -->
+
+            <div class="experience-container">
+                <h4>Skills</h4>
+                <a class="skills-btn" href="#">HTML</a>
+                <a class="skills-btn" href="#">CSS</a>
+                <a class="skills-btn" href="#">JavaScript</a>
+                <a class="skills-btn" href="#">Bootstrap</a>
+                <a class="skills-btn" href="#">React JS</a>
+                <a class="skills-btn" href="#">Wordpress</a>
+                <a class="skills-btn" href="#">Node JS</a>
+                <a class="skills-btn" href="#">Frontend Web Development</a>
+            </div>
+
+            <!-- -------------- Language -------------- -->
+
+            <div class="experience-container">
+                <h4>Languages</h4>
+                <a class="skills-btn" href="#">English</a>
+                <a class="skills-btn" href="#">Urdu</a>
+            </div>
+    </div>
+
+
+    <!-- -------------- Profile sidebar -------------- -->
+
+
+    <div class="profile-page-sidebar">
+        <div class="sidebar-ad">
+            <small>Ad &middot; &middot; &middot;</small>
+            <p>Master the 5 principles of web design</p>
+            <div>
+                <img src="/images/user-1.jpeg" alt="img">
+                <img src="/images/mi-logo.png" alt="img">
+            </div>
+            <b>Brand and Demand in Xiaomi</b>
+            <a href="#" class="ad-link"><span>Learn More</span></a>
+        </div>
+
+        <div class="experience-container">
+            <h4>People you may know</h4>
+            <div class="experience-row">
+                <div><img class="people-knows" src="/images/samia.jpeg" alt="img"></div>
+                <div class="connect-discription">
+                    <h5>Samia S.</h5>
+                    <p class="connect-skill">SEO Specialist | Wordpress Designer</p>
+                    <a class="connect-btn" href="#"><img class="connect-icon-img" src="/images/connect.png" alt="img">Connect</a>
+                </div>
+            </div>
+
+            <div class="experience-row">
+                <div><img class="people-knows" src="/images/waqar.jpeg" alt="img"></div>
+                <div class="connect-discription">
+                    <h5>Waqar Ahmad</h5>
+                    <p class="connect-skill">Frontend Web Developer | Wordpress Developer</p>
+                    <a class="connect-btn" href="#"><img class="connect-icon-img" src="/images/connect.png" alt="img">Connect</a>
+                </div>
+            </div>
+
+            <div class="experience-row">
+                <div><img class="people-knows" src="/images/umer.jpeg" alt="img"></div>
+                <div class="connect-discription">
+                    <h5>Umar Farooq</h5>
+                    <p class="connect-skill">Data Management Specialist at Quality Resource Pvt Ltd</p>
+                    <a class="connect-btn" href="#"><img class="connect-icon-img" src="/images/connect.png" alt="img">Connect</a>
+                </div>
+            </div>
+
+            <div class="experience-row">
+                <div><img class="people-knows" src="/images/ibrar.jpeg" alt="img"></div>
+                <div class="connect-discription">
+                    <h5>Muhammad Ibrar Ahmad</h5>
+                    <p class="connect-skill">SEO Specialist</p>
+                    <a class="connect-btn" href="#"><img class="connect-icon-img" src="/images/connect.png" alt="img">Connect</a>
+                </div>
+            </div>
+
+            <div class="experience-row">
+                <div><img class="people-knows" src="/images/tehreem.jpeg" alt="img"></div>
+                <div class="connect-discription">
+                    <h5>Tehreem Zafar</h5>
+                    <p class="connect-skill">SEO Expert at Skill-tech</p>
+                    <a class="connect-btn" href="#"><img class="connect-icon-img" src="/images/connect.png" alt="img">Connect</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accesability</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the LinkedIn App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-mesg">
+                <img src="/images/logo.png" alt="img">
+                <p>LinkedIn © 2023 All rights reserved</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
+
